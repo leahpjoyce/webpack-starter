@@ -31,9 +31,11 @@ module.exports = merge(common, {
         }
       },
       {
-        test: /\.(js)$/,
-        include: Path.resolve(__dirname, '../src'),
-        loader: 'babel-loader'
+        /*Uncomment because Babel only convert 
+        70% of modern JavaScript features*/
+        // test: /\.(js)$/,
+        // include: Path.resolve(__dirname, '../src'),
+        // loader: 'babel-loader'
       },
       {
         test: /\.s?css$/i,
